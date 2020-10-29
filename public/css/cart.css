@@ -1,0 +1,152 @@
+.banner{
+  height: 40px;
+  background-image: none;
+}
+.main{
+  width: 80%;
+  height: 400px;
+  margin: 0 auto;
+  /* background: wheat; */
+}
+
+.cart_first{
+  background: transparent;
+  padding: 10px;
+  margin-top: 20px;
+  display: flex;
+  flex-flow: wrap nowrap;
+  justify-content: start;
+  align-items: center; 
+
+}
+.cart_first> p:nth-child(2){
+  color: #666;
+}
+.cart_first> p{
+  color: #ccc;
+  margin: 0 15px;
+}
+.cart_first> div button{
+  padding:5px 10px;
+  border-radius: 20px;
+  background: #666;
+  outline: 0;
+  color: #fff;
+}
+.cart_sec{
+  padding: 0 10px;
+  margin: 10px 0;
+}
+.cart_sec>div{
+  width: 100%;
+  padding: 10px 0;
+  background: #fff;
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  /* font-weight: bold; */
+  color: #666;
+  text-align: center;
+  margin: 10px 0;
+}
+.cart_sec>div>div:nth-child(1){
+  flex: 0 0 40%;
+}
+.cart_sec>div>div:nth-child(2){
+  flex: 0 0 15%;
+}
+.cart_sec>div>div:nth-child(3){
+  flex: 0 0 15%;
+}
+.cart_sec>div>div:nth-child(4){
+  flex: 0 0 15%;
+}
+.cart_sec>div>div:nth-child(5){
+  flex: 0 0 15%;
+}
+
+.cart_sec>div div p{
+  text-align: center;
+}
+.cart_sec>div div:first-child p{
+  text-align: left;
+  padding-left: 20px;
+}
+.cart_sec>div div img{
+  width: 70px;
+  height: 70px;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+.cart_sec>div div a{
+  text-decoration: none;
+  color: blue;
+  font-size: 14px;
+}
+.cart_sec>div:nth-child(2)>div:nth-child(2),.cart_sec>div:nth-child(2)>div:nth-child(4){
+  color: red;
+  font-weight: bold;
+}
+
+.first_item{
+  text-align: left;
+}
+.numbtn{
+  width: 65px;
+  height: 40px;
+  border: 1px solid #000;
+  margin: 0 auto ;
+  display: flex;
+  flex-flow:row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: normal;
+}
+.numbtn > div{
+  flex: 1 0 50%;
+  text-align: center;
+  
+}
+.numbtn > div:nth-child(2){
+  flex: 0 0 50%;
+  border-left: 1px solid #666;cursor: pointer;
+}
+.numbtn > div:nth-child(2) div div{
+  text-decoration: none;
+  transform: rotate(90deg);
+  
+}
+.numbtn > div:nth-child(2) div:hover div{
+  color: red;
+}
+.numbtn > div:nth-child(2)>div:nth-child(1){
+  border-bottom: 1px solid #666;  
+}
+.cart_sec>div:nth-child(3){
+  padding: 0;
+  flex-direction: row-reverse;
+  justify-content: end;
+}
+.care_thire>button{
+  padding: 15px 30px;
+  outline: 0;
+  border: 0;
+  background: red;
+  color: #fff;
+  cursor: pointer;
+}
+.cart_sec>div:nth-child(3)>div:nth-child(2){
+  flex: 0 0 25%;
+}
+.care_thire>div:nth-child(2) span{
+  color:red;
+  font-weight: bold;
+  font-size: 20px;
+}
+.care_thire>div:nth-child(3) span{
+  color: #000;
+}
+.care_thire>div:nth-child(4) span{
+  color: red;
+}

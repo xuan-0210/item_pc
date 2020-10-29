@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/hrad.css" />
+    <link rel="stylesheet" href="css/pub.css" />
+  </head>
+  <body>
+    <div class="head">
+      <div class="head_le smallfont">
+        <a href="javascript:;" id="textorgin" style="position: relative"
+          ><span id="text">定位中...</span>
+          <div style="position: absolute; display: none" id="textabso">
+            
+          </div>
+        </a>
+
+        <a href="./login.html" onclick="login()">您好，请登录</a>
+        <a href="./reginster.html" onclick="reginster()">注册</a>
+      </div>
+      <div class="head_ri smallfont">
+        <a href="javascript:;">订单查询</a>
+        <a href="javascript:;">我的足迹</a>
+        <a href="javascript:;">我的收藏</a>
+        <a href="javascript:;" id="proposal">意见建议</a>
+        <a href="javascript:;"
+          >网站导航
+          <span></span>
+
+          <div>
+            <div class="head_rihover">
+              <ul>
+                <li>客服中心</li>
+                <li>关于我们</li>
+                <li>联系我们</li>
+              </ul>
+              <div class="head_rihoverli">
+                <div>
+                  <ul>
+                    <li>售后服务</li>
+                    <li>购物流程</li>
+                    <li>在线支付</li>
+                  </ul>
+                  <ul>
+                    <li>配送说明</li>
+                    <li>订单取消</li>
+                  </ul>
+                  <ul>
+                    <li>定时配送</li>
+                    <li>关于投诉</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="mask">
+      <div>
+        <div class="mask_top">
+          <span
+            >意见建议
+            <a href="javascript:;">×</a>
+          </span>
+        </div>
+        <div class="mask_bom">
+          <div>
+            <p>您的参与将帮助我们改进产品及服务。</p>
+            <div class="mask_type">
+              <p>*选择反馈类型</p>
+              <button type="button" class="active">产品</button>
+              <button type="button">产品</button>
+              <button type="button">产品</button>
+              <button type="button">产品</button>
+              <button type="button">产品</button>
+              <button type="button">产品</button>
+            </div>
+            <div class="mask_sug">
+              <p>* 详细描述您的建议、问题等：</p>
+              <textarea></textarea>
+            </div>
+            <span
+              >上传相关截图：
+              <!-- <img src="" alt=""> -->
+              <input type="file" />
+              <span>图片格式为jpg或gif，大小不超过1M</span>
+            </span>
+            <table>
+              <tr>
+                <td>电话号码:</td>
+                <td><input type="text" /></td>
+              </tr>
+              <tr>
+                <td>验证码:</td>
+                <td><input type="text" /></td>
+                <td><img src="" alt="" /></td>
+                <td><a href="javascript:;">看不清，换一张</a></td>
+              </tr>
+            </table>
+            <input type="submit" value="提交" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header">
+      <div class="header_1">
+        <img src="img/logo_suonin.png" alt="" />
+      </div>
+      <div class="header_2 smallfont">
+        <div>
+          <input type="text" placeholder="请输入搜索关键字" />
+          <button>搜商品</button>
+        </div>
+
+        <a href="">爱情</a>
+        <a href="">玫瑰</a>
+        <a href="">蓝色妖姬</a>
+        <a href="">百合</a>
+      </div>
+      <div class="header_3">
+        <img src="img/ali_tel_ico.png" alt="" />
+        <a href="">400-999-6012</a>
+        <span>|</span>
+        <img src="img/ali_online_ico.png" alt="" />
+        <a href="">在线客服</a>
+      </div>
+    </div>
+    <div id="container"></div>
+    <script src="http://api.map.baidu.com/api?v=3.0&ak=IyZbN7N5IAW1rtPbEITyhFynkOqS0IYT"></script>
+    <script>
+      let provinces = [
+        {
+          shortName: "河北",
+          fullName: "河北省",
+        },
+        {
+          shortName: "河南",
+          fullName: "河南省",
+        },
+        {
+          shortName: "山东",
+          fullName: "山东省",
+        },
+        {
+          shortName: "北京",
+          fullName: "北京市",
+        },
+        {
+          shortName: "河北",
+          fullName: "河北省",
+        },
+        {
+          shortName: "河南",
+          fullName: "河南省",
+        },
+        {
+          shortName: "山东",
+          fullName: "山东省",
+        },
+        {
+          shortName: "天津",
+          fullName: "天津市",
+        },
+        {
+          shortName: "广东",
+          fullName: "广东省",
+        },
+        {
+          shortName: "河北",
+          fullName: "河北省",
+        },
+        {
+          shortName: "河南",
+          fullName: "河南省",
+        },
+        {
+          shortName: "山东",
+          fullName: "山东省",
+        },
+        {
+          shortName: "天津",
+          fullName: "天津市",
+        },
+        {
+          shortName: "广东",
+          fullName: "广东省",
+        },
+        {
+          shortName: "上海",
+          fullName: "上海市",
+        },
+      ];
+      // 定位
+      let textEle = document.getElementById("text");
+      window.onload = function () {
+        let geo = navigator.geolocation;
+        geo.getCurrentPosition(
+          (position) => {
+            let coors = position.coords;
+            let longitude = coors.longitude;
+            let latitude = coors.latitude;
+            // let map = new BMap.Map("container");
+            let point = new BMap.Point(longitude, latitude);
+            let geocoder = new BMap.Geocoder();
+            geocoder.getLocation(point, (result) => {
+              console.log(result)
+              window.setTimeout(() => {
+                textEle.innerText = result.addressComponents.city;
+              }, 1500);
+              let string = '';
+          
+              for(let n = 0;n<provinces.length;n++){
+                
+                if(provinces[n].fullName == result.addressComponents.province){
+                  string += '<span class="active">' + provinces[n].shortName + '</span>&nbsp;&nbsp;';  
+                } else {
+                  string += '<span>' + provinces[n].shortName + '</span>&nbsp;&nbsp;';
+                }
+              }
+              console.log(string)
+              document.getElementById('textabso').innerHTML = string;
+            });
+          },
+          (error) => {
+            console.log(error.code);
+            console.log(error.message);
+          }
+        );
+      };
+      let textorgin = document.getElementById("textorgin");
+      let textabso = document.getElementById("textabso");
+      textorgin.onmouseover = function () {
+        textabso.style.display = "block";
+      };
+      textorgin.onmouseout = function () {
+        textabso.style.display = "none";
+      };
+
+      var sug = document.getElementById("proposal");
+      // console.log(sug);
+      sug.onclick = function () {
+        var mask = document.getElementsByClassName("mask")[0];
+        // console.log(mask);
+        mask.style.display = "block";
+      };
+      var cha = document.querySelector(".mask_top>span a");
+      // console.log(cha)
+      cha.onclick = function () {
+        var mask = document.getElementsByClassName("mask")[0];
+        mask.style.display = "none";
+      };
+
+      function login() {
+        location.href = "http://127.0.0.1:5501/public/login.html";
+      }
+      function reginster() {
+        location.href = "http://127.0.0.1:5501/public/reginster.html";
+      }
+    </script>
+  </body>
+</html>

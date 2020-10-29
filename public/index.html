@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/ind.css">
+  <link rel="stylesheet" href="css/hrad.css">
+  <link rel="stylesheet" href="css/pub.css">
+</head>
+<body>
+  <header style="background: #f1f1f1;">
+    <!-- <iframe scrolling="no" width="100%" src="head.html" id="herader" frameborder="0"></iframe> -->
+    <div class="head">
+      <div class="head_le smallfont">
+        <a href="javascript:;">定位中...</a>
+        <a href="./login.html" onclick="login()">您好，请登录</a>
+        <a href="./reginster.html" onclick="reginster()">注册</a>
+      </div>
+      <div class="head_ri smallfont">
+        <a href="./user.html">我的订单</a>
+        <a href="./user.html">我的足迹</a>
+        <a href="./user.html">我的收藏</a>
+        <a href="javascript:;" id="proposal">意见建议</a>
+        <a href="javascript:;">网站导航
+          <span></span>
+          
+          <div>
+            <div class="head_rihover">
+              <ul>
+                <li>客服中心</li>
+                <li>关于我们</li>
+                <li>联系我们</li>
+              </ul>
+              <div class="head_rihoverli">
+                <div>
+                  <ul>
+                    <li>售后服务</li>
+                    <li>购物流程</li>
+                    <li>在线支付</li>
+                  </ul>
+                  <ul>
+                    <li>配送说明</li>
+                    <li>订单取消</li>
+                  </ul>
+                  <ul>
+                    <li>定时配送</li>
+                    <li>关于投诉</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="mask">
+      <div>
+        <div class="mask_top">
+          <span>意见建议
+            <a href="javascript:;">×</a>
+          </span>
+        </div>
+        <div class="mask_bom">
+          <div>
+            <p>您的参与将帮助我们改进产品及服务。</p>
+            <div class="mask_type">
+              <p>*选择反馈类型</p>
+              <button type="button" class="active">产品</button>
+              <button type="button">产品</button>
+              <button type="button">产品</button>
+              <button type="button">产品</button>
+              <button type="button">产品</button>
+              <button type="button">产品</button>
+            </div>
+            <div class="mask_sug">
+              <p>* 详细描述您的建议、问题等：</p>
+              <textarea></textarea>
+            </div>
+            <span>上传相关截图：
+              <!-- <img src="" alt=""> -->
+              <input type="file">
+              <span>图片格式为jpg或gif，大小不超过1M</span>
+            </span>
+            <table>
+              <tr>
+                <td>电话号码:</td>
+                <td><input type="text"></td>
+              </tr>
+              <tr>
+                <td>验证码:</td>
+                <td><input type="text"></td>
+                <td><img src="" alt=""></td>
+                <td><a href="javascript:;">看不清，换一张</a></td>
+              </tr>
+            </table>
+            <input type="submit" value="提交">
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+  
+    <div class="header">
+      <div class="header_1">
+        <img src="img/logo_suonin.png" alt="">
+      </div>
+      <div class="header_2 smallfont">
+        <div>
+          <input type="text" placeholder="请输入搜索关键字">
+          <button>搜商品</button>
+        </div>
+        
+        <a href="">爱情</a>
+        <a href="">玫瑰</a>
+        <a href="">蓝色妖姬</a>
+        <a href="">百合</a>
+      </div>
+      <div class="header_3">
+        <img src="img/ali_tel_ico.png" alt="">
+        <a href="">400-999-6012</a>
+        <span>|</span>
+        <img src="img/ali_online_ico.png" alt="">
+        <a href="">在线客服</a>
+      </div>
+    </div>
+  </header>
+  <body>
+    <!-- banner -->
+    <div class="banner">
+      <div class="banner_top">
+        <div>
+          <!-- <div>全部商品导购</div> -->
+          <a href="#">首页</a>
+          <a href="./category.html">鲜花</a>
+          <a href="./category.html">开业花篮</a>
+          <a href="./category.html">永生花</a>
+          <a href="./category.html">绿植</a>
+          <a href="./category.html">蛋糕</a>
+          <a href="./category.html">巧克力</a>
+          <a href="./category.html">花语大全</a>
+        </div>
+      </div>
+      <!-- 全部商品导购 -->
+      <div class="banner_mid">
+        <div class="mid_1">
+          <span></span>
+          <a href="javascript:;">全部商品导购</a>
+          <span></span>
+        </div>
+        <div class="midfl_1">
+          <div class="pro_jui">
+            <div>
+              <img src="img/flower_ico1.png" alt="">
+              <span>鲜花用途</span>
+            </div>
+            <div class="smallfont">
+              <span>
+                <a href="javascript:;">爱情鲜花</a>
+                <a href="javascript:;">生日鲜花</a>
+                <a href="javascript:;">友情鲜花</a>
+              </span>
+              <br>
+              <span>
+                <a href="javascript:;">求婚鲜花</a>
+                <a href="javascript:;">周年鲜花</a>
+                <a href="javascript:;">婚庆鲜花</a>
+              </span>
+              <br>
+              <span>
+                <a href="javascript:;">问候鲜花</a>
+                <a href="javascript:;">探病鲜花</a>
+                <a href="javascript:;">哀思鲜花</a>
+              </span>
+            </div>
+          </div>
+          <div class="pro_flo">
+            <a href="javascript:;">鲜花用途</a>
+            <div>
+              <ul>
+                <li><a href="javascript:;">爱情鲜花</a></li>
+                <li><a href="javascript:;">周年鲜花</a></li>
+                <li><a href="javascript:;">道歉鲜花</a></li>
+                <li><a href="javascript:;">婚庆鲜花</a></li>
+              </ul>
+              <ul>
+                <li><a href="javascript:;">生日鲜花</a></li>
+                <li><a href="javascript:;">求婚鲜花</a></li>
+                <li><a href="javascript:;">祝福鲜花</a></li>
+                <li><a href="javascript:;">哀思鲜花</a></li>
+              </ul>
+              <ul>
+                <li><a href="javascript:;">问候鲜花</a></li>
+                <li><a href="javascript:;">友情鲜花</a></li>
+                <li><a href="javascript:;">探病鲜花</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="midfl_1 midfl_2">
+          <div class="pro_jui">
+            <div>
+              <img src="img/flower_ico2.png" alt="">
+              <span>鲜花花材</span>
+            </div>
+            <div class="smallfont">
+              <span>
+                <a href="javascript:;">玫瑰</a>
+                <a href="javascript:;">康乃馨</a>
+                <a href="javascript:;">百合</a>
+              </span>
+              <br>
+              <span>
+                <a href="javascript:;">绣球</a>
+                <a href="javascript:;">向日葵</a>
+                <a href="javascript:;">满天星</a>
+              </span>
+              <br>
+              <span>
+                <a href="javascript:;">菊花</a>
+                <a href="javascript:;">勿忘我</a>
+                <a href="javascript:;">马蹄莲</a>
+              </span>
+            </div>
+          </div>
+          <div class="pro_flo">
+            <a href="javascript:;">鲜花花材</a>
+            <div>
+              <ul>
+                <li><a href="javascript:;">浪漫圣诞组合</a></li>
+                <li><a href="javascript:;">花盒</a></li>
+                <li><a href="javascript:;">手提花篮</a></li>
+                <li><a href="javascript:;">讲台花</a></li>
+              </ul>
+              <ul>
+                <li><a href="javascript:;">高端精品</a></li>
+                <li><a href="javascript:;">组合鲜花</a></li>
+                <li><a href="javascript:;">瓶花/家居鲜花</a></li>
+                <li><a href="javascript:;">手捧花</a></li>
+              </ul>
+              <ul>
+                <li><a href="javascript:;">花束</a></li>
+                <li><a href="javascript:;">韩式花束</a></li>
+                <li><a href="javascript:;">会议花束</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="midfl_1 midfl_3">
+          <div class="pro_jui">
+            <div>
+              <img src="img/flower_ico3.png" alt="">
+              <span>鲜花类别</span>
+            </div>
+            <div class="smallfont">
+              <span>
+                <a href="javascript:;">花束</a>
+                <a href="javascript:;">花盒</a>
+                <a href="javascript:;">手提花篮</a>
+              </span>
+              <br>
+              <span>
+                <a href="javascript:;">绿植</a>
+                <a href="javascript:;">瓶花</a>
+                <a href="javascript:;">开业花篮</a>
+              </span>
+              <br>
+              <span>
+                <a href="javascript:;">会议桌花</a>
+                <a href="javascript:;">精品鲜花</a>
+              </span>
+            </div>
+          </div>
+          <div class="pro_flo">
+            <a href="javascript:;">鲜花类别</a>
+            <div>
+              <ul>
+                <li><a href="javascript:;">浪漫圣诞组合</a></li>
+                <li><a href="javascript:;">花盒</a></li>
+                <li><a href="javascript:;">手提花篮</a></li>
+                <li><a href="javascript:;">讲台花</a></li>
+              </ul>
+              <ul>
+                <li><a href="javascript:;">高端精品</a></li>
+                <li><a href="javascript:;">组合鲜花</a></li>
+                <li><a href="javascript:;">瓶花/家居鲜花</a></li>
+                <li><a href="javascript:;">手捧花</a></li>
+              </ul>
+              <ul>
+                <li><a href="javascript:;">花束</a></li>
+                <li><a href="javascript:;">韩式花束</a></li>
+                <li><a href="javascript:;">会议花束</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="midfl_1 midfl_4">
+          <div class="pro_jui">
+            <div>
+              <img src="img/flower_ico4.png" alt="">
+              <span>其他产品</span>
+            </div>
+            <div class="smallfont">
+              <span>
+                <a href="javascript:;">永生花</a>
+                <a href="javascript:;">香皂花</a>
+                <a href="javascript:;">绿植</a>
+              </span>
+              <br>
+              <span>
+                <a href="javascript:;">蛋糕</a>
+              </span>
+              
+            </div>
+          </div>
+          <div class="pro_flo">
+            <a href="javascript:;">其他产品</a>
+            <div>
+              <ul>
+                <li><a href="javascript:;">爱情鲜花</a></li>
+                <li><a href="javascript:;">周年鲜花</a></li>
+                <li><a href="javascript:;">道歉鲜花</a></li>
+                <li><a href="javascript:;">婚庆鲜花</a></li>
+              </ul>
+              <ul>
+                <li><a href="javascript:;">生日鲜花</a></li>
+                <li><a href="javascript:;">求婚鲜花</a></li>
+                <li><a href="javascript:;">祝福鲜花</a></li>
+                <li><a href="javascript:;">哀思鲜花</a></li>
+              </ul>
+              <ul>
+                <li><a href="javascript:;">问候鲜花</a></li>
+                <li><a href="javascript:;">友情鲜花</a></li>
+                <li><a href="javascript:;">探病鲜花</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 轮播图 -->
+      <div class="banner_bot" id="banner_bot">
+        <div>
+          <ul id="imgs">
+            <li><img src="img/banner1.jpg" alt=""></li>
+            <li><img src="img/banner2.jpg" alt=""></li>
+            <li><img src="img/banner3.jpg" alt=""></li>
+            <li><img src="img/banner4.jpg" alt=""></li>
+            <li><img src="img/banner1.jpg" alt=""></li>
+          </ul>
+        </div>
+        
+        <div class="banner_lists">
+          <ul id="ides">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 橱窗栏 -->
+    <div class="bars">
+      <div>
+        <div class="bat_tople"></div>
+        <div class="bat_topri">
+          <p>今日特价</p>
+          <p>Today's deal</p>
+        </div>
+      </div>
+      <div class="bar_item">
+        <div>
+          <a href="./goods.html"><img src="img/605_thumb_G_1501468789004.jpg" alt=""></a>
+          <span>￥168<s>￥218</s></span>
+          <p>深情时光-7支白玫瑰+2支粉玫瑰</p>
+          <a href="./goods.html"><button class="btn">立即购买</button></a>
+        </div>
+        <div>
+          <a href="./goods.html"><img src="img/938_thumb_G_1506067392726.jpg" alt=""></a>
+          <span>￥168<s>￥218</s></span>
+          <p>怦然心动-11支精品红玫瑰</p>
+          <a href="./goods.html"><button class="btn">立即购买</button></a>
+        </div>
+        <div>
+          <a href="./goods.html"><img src="img/324_thumb_G_1496827759153.jpg" alt=""></a>
+          <span>￥168<s>￥218</s></span>
+          <p>一曲思恋-19支精品粉玫瑰</p>
+          <a href="./goods.html"><button class="btn">立即购买</button></a>
+        </div>
+        <div>
+          <a href="./goods.html"><img src="img/1017_thumb_G_1510911422465.jpg" alt=""></a>
+          <span>￥168<s>￥218</s></span>
+          <p>相知相爱-33支精品红玫瑰</p>
+          <a href="./goods.html"><button class="btn">立即购买</button></a>
+        </div>
+        <div>
+          <a href="./goods.html"><img src="img/239_thumb_G_1500952370993.jpg" alt=""></a>
+          <span>￥168<s>￥218</s></span>
+          <p>今生挚爱-33支精品粉玫瑰</p>
+          <a href="./goods.html"><button class="btn">立即购买</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="bars">
+      <div>
+        <div class="bat_tople"></div>
+        <div class="bat_topri">
+          <p>爆款商品</p>
+          <p> Promotion products</p>
+        </div>
+      </div>
+      <div class="bar_item">
+        <div>
+          <a href="./goods.html"><img src="img/394_thumb_G_1496824275283.jpg" alt=""></a>
+          <span>￥168<s>￥218</s></span>
+          <p>深情时光-7支白玫瑰+2支粉玫瑰</p>
+          <a href="./goods.html"><button class="btn">立即购买</button></a>
+        </div>
+        <div>
+          <a href="./goods.html"><img src="img/266_thumb_G_1496979507632.jpg" alt=""></a>
+          <span>￥168<s>￥218</s></span>
+          <p>深情时光-7支白玫瑰+2支粉玫瑰</p>
+          <a href="./goods.html"><button class="btn">立即购买</button></a>
+        </div>
+        <div>
+          <a href="./goods.html"><img src="img/255_thumb_G_1496980747986.jpg" alt=""></a>
+          <span>￥168<s>￥218</s></span>
+          <p>深情时光-7支白玫瑰+2支粉玫瑰</p>
+          <a href="./goods.html"><button class="btn">立即购买</button></a>
+        </div>
+        <div>
+          <a href="./goods.html"><img src="img/169_thumb_G_1497429026081.jpg" alt=""></a>
+          <span>￥168<s>￥218</s></span>
+          <p>深情时光-7支白玫瑰+2支粉玫瑰</p>
+          <a href="./goods.html"><button class="btn">立即购买</button></a>
+        </div>
+        <div>
+          <a href="./goods.html"><img src="img/637_thumb_G_1501465286365.jpg" alt=""></a>
+          <span>￥168<s>￥218</s></span>
+          <p>深情时光-7支白玫瑰+2支粉玫瑰</p>
+          <a href="./goods.html"><button class="btn">立即购买</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bars barf1">
+      <div class="bar_f1">
+        <div class="bar_f1_1">
+          <div class="bat_tople"></div>
+          <div class="bat_topri">
+            <p>爱情鲜花</p>
+            <p>Birthday flowers</p>
+          </div>
+          <span><a href="javascript:;">更多生日鲜花>></a></span>
+        </div>
+        <div class="bar_f1_2">
+          <div class="f1_le">
+            <img src="img/1489959091429324080.jpg" alt="">
+          </div>
+          <div class="f1_ri">
+            <div>
+              <img src="img/1490902198662849705.png" alt="">
+            </div>
+            <div>
+              <img src="img/1490902716880024601.jpg" alt="">
+            </div>
+            <div class="f1_ri_list">
+              <div>
+                <a href="javascript:;"><img src="img/938_thumb_G_1506067392726.jpg" alt=""></a>
+                <p>想念着您-19支精品红色康乃馨+1支百合</p>
+                <p>￥239</p>
+              </div>
+              <div>
+                <a href="javascript:;"><img src="img/995_thumb_G_1509341453870.jpg" alt=""></a>
+                <p>想念着您-19支精品红色康乃馨+1支百合</p>
+                <p>￥239</p>
+              </div>
+              <div>
+                <a href="javascript:;"><img src="img/243_thumb_G_1496985073446.jpg" alt=""></a>
+                <p>想念着您-19支精品红色康乃馨+1支百合</p>
+                <p>￥239</p>
+              </div>
+              <div>
+                <a href="javascript:;"><img src="img/791_thumb_G_1501146296057.png" alt=""></a>
+                <p>想念着您-19支精品红色康乃馨+1支百合</p>
+                <p>￥239</p>
+              </div>
+            </div>
+            <div class="f1_ri_list">
+              <div>
+                <a href="javascript:;"><img src="img/89_thumb_G_1497494361983.jpg" alt=""></a>
+                <p>想念着您-19支精品红色康乃馨+1支百合</p>
+                <p>￥239</p>
+              </div>
+              <div>
+                <a href="javascript:;"><img src="img/102_thumb_G_1497493697342.jpg" alt=""></a>
+                <p>想念着您-19支精品红色康乃馨+1支百合</p>
+                <p>￥239</p>
+              </div>
+              <div>
+                <a href="javascript:;"><img src="img/248_thumb_G_1496984793960.jpg" alt=""></a>
+                <p>想念着您-19支精品红色康乃馨+1支百合</p>
+                <p>￥239</p>
+              </div>
+              <div>
+                <a href="javascript:;"><img src="img/788_thumb_G_1500880624162.png" alt=""></a>
+                <p>想念着您-19支精品红色康乃馨+1支百合</p>
+                <p>￥239</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bars barf1 barf2">
+      <div class="bar_f1 bar_f2">
+        <div class="bar_f1_1">
+          <div class="bat_tople"></div>
+          <div class="bat_topri">
+            <p>生日鲜花</p>
+            <p>Birthday flowers</p>
+          </div>
+          <span><a href="javascript:;">更多生日鲜花>></a></span>
+        </div>
+        <div class="bar_f2_2">
+          <div class="f2_le">
+            <div><img src="img/pic_f1.jpg" alt=""></div>
+            <div>
+              <div>
+                <button>爱情鲜花</button>
+              </div>
+            </div>
+            <div>
+              <div>
+                <ul>
+                  <li><a href="javascript:;">七夕</a></li>
+                  <li><a href="javascript:;">表白</a></li>
+                  <li><a href="javascript:;">送女友</a></li>
+                </ul>
+                <ul>
+                  <li><a href="javascript:;">七夕</a></li>
+                  <li><a href="javascript:;">表白</a></li>
+                  <li><a href="javascript:;">送女友</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="f2_ri">
+            <div class="f2_ri1">
+              <div>
+                <a href="./goods.html"><img src="img/20_thumb_G_1496639737243.jpg" alt=""></a>
+                <p>钟情一生-11支精品红玫瑰</p>
+                <p>￥151<s>￥191</s></p>
+              </div>
+              <div>
+                <a href="./goods.html"><img src="img/289_thumb_G_1496641945042.jpg" alt=""></a>
+                <p>钟情一生-11支精品红玫瑰</p>
+                <p>￥151<s>￥191</s></p>
+              </div>
+            </div>
+            <div class="f2_ri2">
+              <div class="imgsmalls">
+                <img src="img/birth_ad1.jpg" alt="">
+                <img class="open" src="img/birth_ad2.jpg" alt="">
+              </div>
+              <ul class="lis">
+                <li class="active"></li>
+                <li></li>
+              </ul>
+            </div>
+            <div class="f2_ri3">
+              <div>
+                <a href="./goods.html"><img src="img/860_thumb_G_1502178475803.jpg" alt=""></a>
+                <p>钟情一生-11支精品红玫瑰</p>
+                <p>￥151<s>￥191</s></p>
+              </div>
+              <div>
+                <a href="./goods.html"><img src="img/1099_thumb_G_1516762681956.jpg" alt=""></a>
+                <p>钟情一生-11支精品红玫瑰</p>
+                <p>￥151<s>￥191</s></p>
+              </div>
+              <div>
+                <a href="./goods.html"><img src="img/615_thumb_G_1496382574895.jpg" alt=""></a>
+                <p>钟情一生-11支精品红玫瑰</p>
+                <p>￥151<s>￥191</s></p>
+              </div>
+              <div>
+                <a href="./goods.html"><img src="img/575_thumb_G_1496714773481.jpg" alt=""></a>
+                <p>钟情一生-11支精品红玫瑰</p>
+                <p>￥151<s>￥191</s></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banf3">
+      <div class="barf3_top">
+        <div>F3</div>
+        <div>
+          <span>花篮</span>
+          <br>
+          <p>Flower basket</p>
+        </div>
+      </div>
+      <div class="barf3_bom">
+        <div class="barf3_le">
+          <div>
+            <img src="img/ad1.jpg" alt="">
+          </div>
+          <div>
+            <div>
+              <a href="javascript:;">开业</a>
+              <a href="javascript:;">乔迁</a>
+              <a href="javascript:;">庆典</a>
+              <a href="javascript:;">活动</a>
+              <a href="javascript:;">会议</a>
+              <a href="javascript:;">婚庆</a>
+              <a href="javascript:;">祝寿</a>
+            </div>
+          </div>
+        </div>
+        <div class="barf3_ri">
+          <div class="barf3_ri_items">
+            <div>
+              <div>
+                <a href="./goods.html"><img src="img/383_thumb_G_1512438839700.jpg" alt=""></a>
+              </div>
+              <p class="redfont">￥148 <s>￥192</s></p>
+              <p>鸿运齐天</p>
+            </div>
+            <div>
+              <div>
+                <a href="./goods.html"><img src="img/1531711415_10077.jpg" alt=""></a>
+              </div>
+              <p class="redfont">￥148 <s>￥192</s></p>
+              <p>鸿运齐天</p>
+            </div>
+            <div>
+              <div>
+                <a href="./goods.html"><img src="img/1530173558_44652.jpg" alt=""></a>
+              </div>
+              <p class="redfont">￥148 <s>￥192</s></p>
+              <p>鸿运齐天</p>
+            </div>
+            <div>
+              <div>
+                <a href="./goods.html"><img src="img/561_thumb_G_1510542730785.jpg" alt=""></a>
+              </div>
+              <p class="redfont">￥148 <s>￥192</s></p>
+              <p>鸿运齐天</p>
+            </div>
+            
+          </div>
+          <div class="barf3_ri_lists">
+            <div class="lists_tiop">
+              <p>热卖榜单<span>更多</span></p>
+              </div>
+            <div class="lists_lbody">
+              <div class="lists_1body_1">
+                <div>
+                  <p><a href="./goods.html">好运来</a></p>
+                  <p>￥150</p>
+                  <p>已售1635</p>
+                </div>
+                <div>
+                  <img src="img/1009_thumb_G_1510298001360.jpg" alt="">
+                </div>
+              </div>
+              <div class="lists_1body_2">
+                <div>
+                  <p><a href="./goods.html">好运来</a></p>
+                  <p>￥150</p>
+                  <p>已售1635</p>
+                </div>
+                <div>
+                  <img src="img/1009_thumb_G_1510298001360.jpg" alt="">
+                </div>
+              </div>
+              <div class="lists_1body_3">
+                <div>
+                  <p><a href="./goods.html">好运来</a></p>
+                  <p>￥150</p>
+                  <p>已售1635</p>
+                </div>
+                <div>
+                  <img src="img/1009_thumb_G_1510298001360.jpg" alt="">
+                </div>
+              </div>
+              <div class="lists_1body_4">
+                <div>
+                  <p><a href="./goods.html">好运来</a></p>
+                  <p>￥150</p>
+                  <p>已售1635</p>
+                </div>
+                <div>
+                  <img src="img/1009_thumb_G_1510298001360.jpg" alt="">
+                </div>
+              </div>
+              <div class="lists_1body_5">
+                <div>
+                  <p><a href="./goods.html">好运来</a></p>
+                  <p>￥150</p>
+                  <p>已售1635</p>
+                </div>
+                <div>
+                  <img src="img/1009_thumb_G_1510298001360.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text">
+      <div>
+        <a href="javascript:;">友情链接</a>
+        <a href="javascript:;">LINK</a>
+        <a href="javascript:;">友情链接交换 </a>
+        <a href="javascript:;"> QQ;3001242565</a>
+      </div>
+      <div>          
+        <a href="javascript:;">小吃培训</a>
+        <a href="javascript:;">昆明康辉旅行社</a>
+        <a href="javascript:;">网上花店</a>
+        <a href="javascript:;">生活常识</a>
+        <a href="javascript:;">二手设备网</a>
+        <a href="javascript:;">有机食品网上商城</a>
+        <a href="javascript:;">湛江人才网</a>
+        <a href="javascript:;">Rosewin鲜花订购</a>
+        <a href="javascript:;">315防伪</a>
+        <a href="javascript:;">宅男福利吧</a>
+        <a href="javascript:;">家用椭圆机</a>
+      </div>
+    </div>
+    <div class="fixed_panel" id="fixedPanel">
+      <div class="panel">
+        <div>
+          <a href="javascript:;"><img src="img/用户.png" alt=""></a>
+          <div id="shoppingCart">
+            <img src="img/购物车.png" alt="">
+            <a href="javascript:;" >购物车</a>
+            <span>0</span>
+          </div>
+          <div>
+            <a href="javascript:;"><img src="img/我的订单.png" alt=""></a>
+            <a href="javascript:;"><img src="img/优惠券.png" alt=""></a>
+            <a href="javascript:;"><img src="img/我的足迹.png" alt=""></a>
+          </div>
+        </div>
+        <div>
+          <a href=""><img src="img/客服.png" alt=""></a>
+          <a href="#"><img src="img/返回顶部.png" alt=""></a>
+        </div>
+      </div>
+      <div id="vanish">
+
+      </div>
+    </div>
+    <script src="./js/pub.js"></script>
+    <script src="./js/banner.js"></script>
+    <script>
+      var a = 0;
+      var smallcount=2;
+      let smalllists = document.querySelectorAll('.lis>li')
+      function animate(){
+        var imgs = document.querySelector(".imgsmalls");
+        var img = imgs.firstElementChild;
+        img.style.display="none";
+        img.nextElementSibling.style.display="block";
+        imgs.removeChild(img);
+        imgs.appendChild(img);
+        a+=1
+        for(var li of smalllists){
+          li.className = ''
+        }
+        if(a == smallcount){
+          a=0
+        }
+        smalllists[a].className='active'
+      }
+      var timeanimate = setInterval(()=>{
+        animate()
+      },3000)
+    // setInterval(function(){
+    //   var imgs = document.querySelector(".imgsmalls");
+    //   var img = imgs.firstElementChild;
+    //   img.style.display="none";
+    //   img.nextElementSibling.style.display="block";
+    //   imgs.removeChild(img);
+    //   imgs.appendChild(img);
+      // console.log(imgs);
+      // var i=0;
+
+      // var lis = document.querySelectorAll(".f2_ri2>ul>li");
+      // // console.log(lis);
+      // lis[i].style.background="red";
+      // i++;
+      // lis[i].style.background="#aaa";
+      // if(i==1){
+      //   lis[0].style.background="#aaa";
+      //   lis[1].style.background="red";
+      //   i=0;
+      //   clearInterval();
+      // }
+      
+    // },3000)
+
+    // let fixedPanel = document.getElementById('fixedPanel');
+    // let vanish = document.getElementById('vanish');
+    // fixedPanel.onclick=function(){
+    //   if(getComputedStyle(fixedPanel).width == '50px'){
+    //     fixedPanel.style.width = '300px'
+    //     fixedPanel.style.backgroundColor = '#fff'
+    //   }else{
+    //     fixedPanel.style.width = '50px'
+    //   }
+      
+    // }
+    var sug = document.getElementById("proposal");
+    // console.log(sug);
+    sug.onclick=function(){
+      var mask = document.getElementsByClassName("mask")[0];
+      // console.log(mask);
+      mask.style.display="block"
+    }
+    var cha = document.querySelector(".mask_top>span a");
+    // console.log(cha)
+    cha.onclick=function(){
+      var mask = document.getElementsByClassName("mask")[0];
+      mask.style.display="none"
+    }
+    
+
+    function login(){
+      location.href="http://127.0.0.1:5500/public/login.html"
+    }
+    function reginster(){
+      location.href="http://127.0.0.1:5500/public/reginster.html"
+    }
+
+
+    </script>
+    <!-- <script src="js/pub.js"></script> -->
+  </body>
+  <footer>
+    <iframe width="100%" height="320px" src="footer.html" frameborder="0"></iframe>
+  </footer>
+</body>
+</html>

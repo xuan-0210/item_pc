@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.cl{
+  clear: both;
+}
+#header{
+  overflow: hidden;
+}
+.smallfont{
+  font-size: 12px;
+  color: #999;
+}
+.redfont{
+  color: red;
+  font-size: 15px;
+}
+.infont{
+  font-size: 15px;
+}
+
+.line-limit{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.fixed_panel{
+  width: 50px;
+  height: 800px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  transition: all .5s ease;
+}
+
+.panel{
+  width: 50px;
+  height: 800px;
+  background-color: #000;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.panel>div:first-child{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-top: 70px;
+}
+.panel>div>a{
+  text-align: center;
+  display: block;
+  padding: 5px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #fff;
+}
+.panel>div>div{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #fff;
+}
+.panel>div>div:nth-child(2):hover{
+  text-align: center;
+  background:#f42424;
+}
+.panel>div>div img{
+  padding: 10px 15px;
+}
+.panel>div>div a{
+  width: 10px;
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+  /* text-align: center; */
+}
+.panel>div>div:nth-child(3) a:hover{
+  text-align: center;
+  width: 40px;
+  padding-left: 10px;
+  background:#f42424;
+}
+.panel>div>div span{
+  display: inline-block;
+  width: 20px;height: 20px;
+  margin-right: -2.5px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #f00;
+  color: #fff;
+}
+.panel>div>div:last-child img{
+  padding: 0;
+  margin-left: -12px;
+  padding: 10px;
+  /* text-align: center; */
+}
+.panel>div:last-child img{
+  padding: 5px 10px;
+  /* margin-left: 8px; */
+}
+
+.panel_lists{
+  width: 200px;
+  height: 720px;
+  background-color: #999;
+}
+
+
+
+#herader{
+  position: relative;
+  z-index: 999;
+}

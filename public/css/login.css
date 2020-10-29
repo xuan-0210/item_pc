@@ -1,0 +1,291 @@
+.banner{
+  width: 100%;
+  height: 570px;
+  margin: 0 auto;
+  background-image: url(../img/login_bg3.jpg);
+}
+.banner_top .mid_1{
+  width: 251px;
+  height: 100%;
+  text-align: center;
+  font-size: 15px;line-height: 40px;
+  background-color: #4e5863;
+  position: relative;
+  left: -50px;
+}
+.banner_top .mid_1 a{
+  color: #fff;
+  line-height: 40px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.banner_top .mid_1>a::after,.banner_top .mid_1>a::before{
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 20px;
+  border-radius: 50%;
+  background-color: #707b86;
+}
+.banner_mid{
+  background-color: #f1f1f1;
+} 
+/* .banner_mid{
+  display: none;
+} */
+
+#show{
+  width: 250px;
+  height: 520px;
+  position: absolute;
+  /* left: 169px; */
+  color: #fff;
+  display: none;
+  background-color: #999;
+}
+#show>div.midfl_1{
+  width: 250px;
+  height: 25%;
+  text-align: left;
+}
+#show div.pro_jui{
+  line-height: 30px !important;
+  border-bottom: none;
+}
+#show>div.pro_jui>div:last-child{
+  line-height: 30px;
+}
+.banner_mid .mid_1:hover .banner_mid>.midfl_1{
+  display: block;
+}
+.banner_top div.mid_1:hover #show{
+  display: block;
+}
+.pro_flo{
+  width: 300px;
+  height: 200px;
+  background-color: #fff;
+  position: absolute;
+  left: 250px;
+  top: 0;
+  text-align: center;
+  display: none;
+}
+#show .pro_flo>a{
+  position: relative;
+  left: -100px;
+  top: 0px;
+  /* text-align: left; */
+}
+#show .pro_flo a{
+  color:#666;
+
+}
+.midfl_2 .pro_jui .pro_flo{
+  top: 100px;
+}
+.midfl_3 .pro_jui .pro_flo{
+  top: 200px;
+}
+.midfl_4 .pro_jui .pro_flo{
+  top: 320px;
+}
+#show div.pro_jui:hover div.pro_flo{
+  display: block;
+}
+
+.froms{
+  width: 355px;
+  height: 354px;
+  position: absolute;
+  right: 160px;
+  top: 100px;
+  box-sizing: border-box;
+  padding: 20px 40px;
+  background-color: #fff;
+}
+.froms_top{
+  width: 100%;
+  /* height: 50px; */
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #666;
+}
+.froms_top a{
+  display: inline-block;
+  /* width: 48%; */
+  flex: 1 0 45%;
+  text-decoration: none;
+  color: #666;
+  text-align: center;
+  /* height: 100%; */
+  padding:15px 0;
+}
+.froms_top a.active{
+  color: #f00;
+  font-weight: bold;
+  border-bottom: 2px solid #f00;
+}
+.froms_bom{
+  width: 100%;
+  height: 250px;
+  /* display: none; */
+  /* border: 1px solid #f00; */
+}
+.froms_bom span{
+  font-size: 12px;
+  width: 100%;
+  display: inline-block;
+  padding: 10px 0 5px 0;
+  color: #f00;
+  text-align: right;
+}
+.froms_bom input{
+  width: 100%;
+  /* height: ; */
+  padding: 10px 0;
+  padding-left: 40px;
+  font-size: 12px;
+  border: 1px solid #666;
+  outline: 0;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+.froms_bom input:nth-child(2){
+  background: url(../img/phone.png) no-repeat;
+  background-position:5px 0;
+}
+.froms_bom input:nth-child(3){
+  background: url(../img/upwd.png) no-repeat;
+  background-position:0 -1px;
+}
+.froms_bom input[type=button]{
+  color: #f00;
+  padding: 10px 0;
+  background-color: #f33;
+  color: #fff;
+  font-weight: bold;
+  border: 0;
+  outline: 0;
+  font-size: 15px;
+}
+
+.froms_bom span:last-child{
+  font-size: 13px;
+  color: #666;
+  text-align: left;
+}
+.froms_bom span:last-child a{
+  text-decoration: none;
+  color: #666;
+}
+
+.from_upwd{
+  width: 100%;
+  height: 300px;
+  display: none;
+  position: relative;
+  /* position: absolute; */
+  /* background-color: #f00; */
+}
+.from_upwd input{
+  border: 1px solid #999;
+  outline: 0;
+}
+
+.from_upwd>input:first-child,.from_upwd input:nth-child(5),.from_upwd input:nth-child(6),.from_upwd input:nth-child(7){
+  width: 100%;
+  box-sizing: border-box;
+  /* height: ; */
+  margin: 10px 0;
+  padding: 8px 0;
+  padding-left: 30px;
+}
+
+.from_upwd>input:first-child{
+  margin-top: 20px;
+  background: url(../img/phone.png) no-repeat;
+}
+.from_upwd>div{
+  width: 100%;
+  /* height: 40px; */
+  margin: 10px 0 20px;
+  box-sizing: border-box;
+  display: flex;
+}
+.from_upwd>div input{
+  /* flex: 0 0 33.3%; */
+  width: 100px;
+  padding: 8px 0;
+  box-sizing: border-box;
+  padding-left: 5px;
+}
+
+.from_upwd>div p{
+  font-size: 10px;
+  color: #666;
+  line-height: 40px;
+}
+
+.from_upwd input:nth-child(3){
+  width: 55%;
+  padding: 8px 0;
+  box-sizing: border-box;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  background: url(../img/phone.png) no-repeat;
+  /* height: 30px; */
+}
+.from_upwd input:nth-child(4){
+  padding: 8px 0;
+  width: 43%;
+  cursor: pointer;
+  font-size: 12px;
+}
+.from_upwd input:nth-child(5){
+  background: url(../img/phone.png) no-repeat;
+}
+.from_upwd input:nth-child(6){
+  background: url(../img/phone.png) no-repeat;
+}
+
+.from_upwd input:nth-child(7){
+  text-align: center;
+  padding: 8px 0;
+  background-color: #f00;
+  color: #fff;
+  cursor: pointer;
+}
+.from_upwd>a{
+  text-decoration: none;
+  font-size: 12px;
+  color: #666;
+}
+.from_upwd>span{
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  color: #f00;
+  left: 30%;
+  text-align: center;
+  width: 100px;
+  height: 20px;
+  font-size: 13px;
+  line-height: 20px;
+  /* border: 1px solid #f00; */
+}
+
+
+
+
+#register{
+  height: 460px;
+}
+
+#register_bom{
+  display: none;
+}
+#register_upwd{
+  display: block;
+}

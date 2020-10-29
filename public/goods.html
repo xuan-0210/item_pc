@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/ind.css" />
+    <link rel="stylesheet" href="css/pub.css" />
+    <link rel="stylesheet" href="css/hrad.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/goods.css" />
+  </head>
+  <body>
+    <header style="background: #f1f1f1">
+      <!-- <iframe scrolling="no" width="100%" src="head.html" id="herader" frameborder="0"></iframe> -->
+      <div class="head">
+        <div class="head_le smallfont">
+          <a href="javascript:;">定位中...</a>
+          <a href="./login.html" onclick="login()">您好，请登录</a>
+          <a href="./reginster.html" onclick="reginster()">注册</a>
+        </div>
+        <div class="head_ri smallfont">
+          <a href="javascript:;">订单查询</a>
+          <a href="javascript:;">我的足迹</a>
+          <a href="javascript:;">我的收藏</a>
+          <a href="javascript:;" id="proposal">意见建议</a>
+          <a href="javascript:;"
+            >网站导航
+            <span></span>
+
+            <div>
+              <div class="head_rihover">
+                <ul>
+                  <li>客服中心</li>
+                  <li>关于我们</li>
+                  <li>联系我们</li>
+                </ul>
+                <div class="head_rihoverli">
+                  <div>
+                    <ul>
+                      <li>售后服务</li>
+                      <li>购物流程</li>
+                      <li>在线支付</li>
+                    </ul>
+                    <ul>
+                      <li>配送说明</li>
+                      <li>订单取消</li>
+                    </ul>
+                    <ul>
+                      <li>定时配送</li>
+                      <li>关于投诉</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="mask">
+        <div>
+          <div class="mask_top">
+            <span
+              >意见建议
+              <a href="javascript:;">×</a>
+            </span>
+          </div>
+          <div class="mask_bom">
+            <div>
+              <p>您的参与将帮助我们改进产品及服务。</p>
+              <div class="mask_type">
+                <p>*选择反馈类型</p>
+                <button type="button" class="active">产品</button>
+                <button type="button">产品</button>
+                <button type="button">产品</button>
+                <button type="button">产品</button>
+                <button type="button">产品</button>
+                <button type="button">产品</button>
+              </div>
+              <div class="mask_sug">
+                <p>* 详细描述您的建议、问题等：</p>
+                <textarea></textarea>
+              </div>
+              <span
+                >上传相关截图：
+                <!-- <img src="" alt=""> -->
+                <input type="file" />
+                <span>图片格式为jpg或gif，大小不超过1M</span>
+              </span>
+              <table>
+                <tr>
+                  <td>电话号码:</td>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <td>验证码:</td>
+                  <td><input type="text" /></td>
+                  <td><img src="" alt="" /></td>
+                  <td><a href="javascript:;">看不清，换一张</a></td>
+                </tr>
+              </table>
+              <input type="submit" value="提交" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header">
+        <div class="header_1">
+          <img src="img/logo_suonin.png" alt="" />
+        </div>
+        <div class="header_2 smallfont">
+          <div>
+            <input type="text" placeholder="请输入搜索关键字" />
+            <button>搜商品</button>
+          </div>
+
+          <a href="">爱情</a>
+          <a href="">玫瑰</a>
+          <a href="">蓝色妖姬</a>
+          <a href="">百合</a>
+        </div>
+        <div class="header_3">
+          <img src="img/ali_tel_ico.png" alt="" />
+          <a href="">400-999-6012</a>
+          <span>|</span>
+          <img src="img/ali_online_ico.png" alt="" />
+          <a href="">在线客服</a>
+        </div>
+      </div>
+    </header>
+    <div class="banner">
+      <div class="banner_top">
+        <div>
+          <!-- <div>全部商品导购</div> -->
+          <div class="mid_1">
+            <a href="javascript:;">全部商品导购</a>
+            <div id="show">
+              <div class="midfl_1">
+                <div class="pro_jui">
+                  <div>
+                    <img src="img/flower_ico1.png" alt="" />
+                    <span>鲜花用途</span>
+                  </div>
+                  <div class="smallfont">
+                    <span>
+                      <a href="javascript:;">爱情鲜花</a>
+                      <a href="javascript:;">生日鲜花</a>
+                      <a href="javascript:;">友情鲜花</a>
+                    </span>
+                    <br />
+                    <span>
+                      <a href="javascript:;">求婚鲜花</a>
+                      <a href="javascript:;">周年鲜花</a>
+                      <a href="javascript:;">婚庆鲜花</a>
+                    </span>
+                    <br />
+                    <span>
+                      <a href="javascript:;">问候鲜花</a>
+                      <a href="javascript:;">探病鲜花</a>
+                      <a href="javascript:;">哀思鲜花</a>
+                    </span>
+                  </div>
+                  <div class="pro_flo">
+                    <a href="javascript:;">鲜花用途</a>
+                    <div>
+                      <ul>
+                        <li><a href="javascript:;">爱情鲜花</a></li>
+                        <li><a href="javascript:;">周年鲜花</a></li>
+                        <li><a href="javascript:;">道歉鲜花</a></li>
+                        <li><a href="javascript:;">婚庆鲜花</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="javascript:;">生日鲜花</a></li>
+                        <li><a href="javascript:;">求婚鲜花</a></li>
+                        <li><a href="javascript:;">祝福鲜花</a></li>
+                        <li><a href="javascript:;">哀思鲜花</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="javascript:;">问候鲜花</a></li>
+                        <li><a href="javascript:;">友情鲜花</a></li>
+                        <li><a href="javascript:;">探病鲜花</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="midfl_1 midfl_2">
+                <div class="pro_jui">
+                  <div>
+                    <img src="img/flower_ico2.png" alt="" />
+                    <span>鲜花花材</span>
+                  </div>
+                  <div class="smallfont">
+                    <span>
+                      <a href="javascript:;">玫瑰</a>
+                      <a href="javascript:;">康乃馨</a>
+                      <a href="javascript:;">百合</a>
+                    </span>
+                    <br />
+                    <span>
+                      <a href="javascript:;">绣球</a>
+                      <a href="javascript:;">向日葵</a>
+                      <a href="javascript:;">满天星</a>
+                    </span>
+                    <br />
+                    <span>
+                      <a href="javascript:;">菊花</a>
+                      <a href="javascript:;">勿忘我</a>
+                      <a href="javascript:;">马蹄莲</a>
+                    </span>
+                  </div>
+                  <div class="pro_flo">
+                    <a href="javascript:;">鲜花花材</a>
+                    <div>
+                      <ul>
+                        <li><a href="javascript:;">浪漫圣诞组合</a></li>
+                        <li><a href="javascript:;">花盒</a></li>
+                        <li><a href="javascript:;">手提花篮</a></li>
+                        <li><a href="javascript:;">讲台花</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="javascript:;">高端精品</a></li>
+                        <li><a href="javascript:;">组合鲜花</a></li>
+                        <li><a href="javascript:;">瓶花/家居鲜花</a></li>
+                        <li><a href="javascript:;">手捧花</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="javascript:;">花束</a></li>
+                        <li><a href="javascript:;">韩式花束</a></li>
+                        <li><a href="javascript:;">会议花束</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="midfl_1 midfl_3">
+                <div class="pro_jui">
+                  <div>
+                    <img src="img/flower_ico3.png" alt="" />
+                    <span>鲜花类别</span>
+                  </div>
+                  <div class="smallfont">
+                    <span>
+                      <a href="javascript:;">花束</a>
+                      <a href="javascript:;">花盒</a>
+                      <a href="javascript:;">手提花篮</a>
+                    </span>
+                    <br />
+                    <span>
+                      <a href="javascript:;">绿植</a>
+                      <a href="javascript:;">瓶花</a>
+                      <a href="javascript:;">开业花篮</a>
+                    </span>
+                    <br />
+                    <span>
+                      <a href="javascript:;">会议桌花</a>
+                      <a href="javascript:;">精品鲜花</a>
+                    </span>
+                  </div>
+                  <div class="pro_flo">
+                    <a href="javascript:;">鲜花类别</a>
+                    <div>
+                      <ul>
+                        <li><a href="javascript:;">浪漫圣诞组合</a></li>
+                        <li><a href="javascript:;">花盒</a></li>
+                        <li><a href="javascript:;">手提花篮</a></li>
+                        <li><a href="javascript:;">讲台花</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="javascript:;">高端精品</a></li>
+                        <li><a href="javascript:;">组合鲜花</a></li>
+                        <li><a href="javascript:;">瓶花/家居鲜花</a></li>
+                        <li><a href="javascript:;">手捧花</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="javascript:;">花束</a></li>
+                        <li><a href="javascript:;">韩式花束</a></li>
+                        <li><a href="javascript:;">会议花束</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="midfl_1 midfl_4">
+                <div class="pro_jui">
+                  <div>
+                    <img src="img/flower_ico4.png" alt="" />
+                    <span>其他产品</span>
+                  </div>
+                  <div class="smallfont">
+                    <span>
+                      <a href="javascript:;">永生花</a>
+                      <a href="javascript:;">香皂花</a>
+                      <a href="javascript:;">绿植</a>
+                    </span>
+                    <br />
+                    <span>
+                      <a href="javascript:;">蛋糕</a>
+                    </span>
+                  </div>
+                  <div class="pro_flo">
+                    <a href="javascript:;">其他产品</a>
+                    <div>
+                      <ul>
+                        <li><a href="javascript:;">爱情鲜花</a></li>
+                        <li><a href="javascript:;">周年鲜花</a></li>
+                        <li><a href="javascript:;">道歉鲜花</a></li>
+                        <li><a href="javascript:;">婚庆鲜花</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="javascript:;">生日鲜花</a></li>
+                        <li><a href="javascript:;">求婚鲜花</a></li>
+                        <li><a href="javascript:;">祝福鲜花</a></li>
+                        <li><a href="javascript:;">哀思鲜花</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="javascript:;">问候鲜花</a></li>
+                        <li><a href="javascript:;">友情鲜花</a></li>
+                        <li><a href="javascript:;">探病鲜花</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="./index.html">首页</a>
+          <a href="./category.html">鲜花</a>
+          <a href="./category.html">开业花篮</a>
+          <a href="./category.html">永生花</a>
+          <a href="./category.html">绿植</a>
+          <a href="./category.html">蛋糕</a>
+          <a href="./category.html">巧克力</a>
+          <a href="./category.html">花语大全</a>
+        </div>
+      </div>
+    </div>
+    <div class="navlist">
+      <div>
+        <button>首页</button>
+        <span>></span>
+        <button>鲜花</button>
+        <span>></span>
+        <p>流星雨-33支精品蓝色妖姬</p>
+      </div>
+    </div>
+    <div class="detailed" id="demo">
+      <div class="detailed_imgs" id="small-box">
+        <div id="mark"></div>
+        <div id="float-box"></div>
+        <img src="img/167_P_1499136432176.jpg" alt="" id="imgass" />
+        <div>
+          <button id="btnLeft" class="active" disabled><</button>
+          <div class="imgs_lists">
+            <div id="Imglist">
+              <img src="img/167_P_1476176177828.jpg" alt="" />
+              <img src="img/167_P_1499136432176.jpg" alt="" />
+              <img src="img/167_P_1476176177828.jpg" alt="" />
+              <img src="img/167_P_1499136432176.jpg" alt="" />
+              <img src="img/167_P_1476176177828.jpg" alt="" />
+              <img src="img/167_P_1499136432176.jpg" alt="" />
+            </div>
+          </div>
+          <button id="btnRight">></button>
+        </div>
+        <div>
+          <span><img src="" />收藏</span>
+          <span>|</span>
+          <span>分享</span>
+        </div>
+      </div>
+      <div id="big-box">
+        <img src="img/167_P_1499136432176.jpg" alt="" id="imgass" />
+      </div>
+      <div class="information">
+        <p>流星雨-33支精品蓝色妖姬</p>
+        <div>
+          <div>
+            <p>
+              <span>优惠价</span>
+              <span class="price">¥769</span>
+            </p>
+            <p>
+              <span>市场价</span>
+              <span><s>¥999</s></span>
+            </p>
+          </div>
+          <div class="evaluate">
+            <p>
+              累计评价 <span>5705</span><span>|</span>累计销量 <span>5102</span>
+            </p>
+          </div>
+        </div>
+        <div class="information_text">
+          <span>编号</span>
+          <span>ECS000167</span>
+        </div>
+        <div class="information_text">
+          <span>材料</span>
+          <span
+            >33朵蓝色妖姬，搭配适量石竹梅间插。（注：“蓝色妖姬”这个名字最早来自荷兰，是一种加工花卉。它是用一种对人体无害的染色剂和助染剂调合着色而成。蓝色妖姬是近两年玫瑰中的新贵，其花语代表“清纯的爱和敦厚善良”
+            ）</span
+          >
+        </div>
+        <div class="information_text">
+          <span>包装</span>
+          <span>白色纸内衬，蓝色硬纸外围圆形包装。</span>
+        </div>
+        <div class="information_text">
+          <span>花语</span>
+          <span
+            >像流星一样的花朵，代表一个人的思念，像流星划过夜空，坠入花丛中。</span
+          >
+        </div>
+        <div class="information_text">
+          <span>附赠</span>
+          <span>免费附送精美贺卡，代写您的祝福。(您下单时可填写留言栏)</span>
+        </div>
+        <div class="information_text">
+          <span>配送</span>
+          <span>全国 （可配送至全国1000多个城市，市区免配送费）</span>
+        </div>
+        <div class="information_text">
+          <span>说明</span>
+          <span
+            >由于鲜花包扎各地的花艺师不同，可能在形式和搭配上与图片不完全一致，但保证主花材的新鲜程度、数量、颜色与说明一致，谢谢。</span
+          >
+        </div>
+        <div class="information_text delivery">
+          <span>配送</span>
+          <span
+            >至
+            <select name="" id="">
+              <option value="">河北 河北</option>
+              <option value="">河北</option>
+              <option value="">河北</option>
+              <option value="">河北</option>
+            </select>
+            <span class="redfont">有货</span>，下单后立即发货
+          </span>
+        </div>
+        <div class="information_text">
+          <span>数量</span>
+          <div class="number">
+            <input id="numval" type="text" value="1" />
+            <div>
+              <button id="add">+</button>
+              <button disabled id="sub">-</button>
+            </div>
+          </div>
+        </div>
+        <div class="information_text">
+          <button>加入购物车</button>
+          <button>立即购买</button>
+        </div>
+      </div>
+      <div class="detailed_lists">
+        <h5>-----看了又看-----</h5>
+        <div>
+          <div>
+            <div>
+              <img src="img/995_thumb_G_1509341453870.jpg" alt="" />
+              <p>想在你心中-19值支精品混搭</p>
+              <p>¥1314</p>
+            </div>
+            <div>
+              <img src="img/995_thumb_G_1509341453870.jpg" alt="" />
+              <p>想在你心中-19值支精品混搭</p>
+              <p>¥1314</p>
+            </div>
+            <div>
+              <img src="img/995_thumb_G_1509341453870.jpg" alt="" />
+              <p>想在你心中-19值支精品混搭</p>
+              <p>¥1314</p>
+            </div>
+            <div>
+              <img src="img/995_thumb_G_1509341453870.jpg" alt="" />
+              <p>想在你心中-19值支精品混搭</p>
+              <p>¥1314</p>
+            </div>
+            <div>
+              <img src="img/995_thumb_G_1509341453870.jpg" alt="" />
+              <p>想在你心中-19值支精品混搭</p>
+              <p>¥1314</p>
+            </div>
+          </div>
+        </div>
+        <div class="detailed_ass">
+          <div id="detailed_top" name="detailed_top">
+            <a href="javascript:;"
+              ><img src="img/2020-08-02_173756.png" alt=""
+            /></a>
+          </div>
+          <div id="detailed_bom" name="detailed_bom">
+            <a href="javascript:;"
+              ><img src="img/2020-08-02_173854.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="group">
+      <div>
+        <button>甜蜜组合</button>
+        <button>生日组合</button>
+      </div>
+      <div class="group_lists">
+        <div>
+          <div>
+            <img src="img/248_thumb_G_1496984793960.jpg" alt="" />
+            <p>眷恋-99支精品红玫瑰</p>
+            <p id="cost">￥1259</p>
+          </div>
+          <div>+</div>
+        </div>
+        <div>
+          <div class="sweet">
+            <img src="img/38_thumb_G_1498725085607.jpg" alt="" />
+            <p>花漾甜心-德芙98g礼盒装</p>
+            <p>
+              <input type="checkbox" name="" id="" />
+              <span>¥112</span>
+            </p>
+          </div>
+          <div class="sweet">
+            <img src="img/38_thumb_G_1498725085607.jpg" alt="" />
+            <p>花漾甜心-德芙98g礼盒装</p>
+            <p>
+              <input type="checkbox" name="" id="" />
+              <span>¥113</span>
+            </p>
+          </div>
+          <div class="sweet">
+            <img src="img/38_thumb_G_1498725085607.jpg" alt="" />
+            <p>花漾甜心-德芙98g礼盒装</p>
+            <p>
+              <input type="checkbox" name="" id="" />
+              <span>¥114</span>
+            </p>
+          </div>
+          <div class="sweet">
+            <img src="img/38_thumb_G_1498725085607.jpg" alt="" />
+            <p>花漾甜心-德芙98g礼盒装</p>
+            <p>
+              <input type="checkbox" name="" id="" />
+              <span>¥115</span>
+            </p>
+          </div>
+          <div class="sweet">
+            <img src="img/38_thumb_G_1498725085607.jpg" alt="" />
+            <p>花漾甜心-德芙98g礼盒装</p>
+            <p>
+              <input type="checkbox" name="" id="" />
+              <span>¥116</span>
+            </p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p>已选择 <span id="num">0</span>个商品</p>
+            <p>搭配价：<span id="price">¥1259</span></p>
+            <button onclick="location.href='http://127.0.0.1:5500/PC/public/cart.html'">购买套装</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="particulars">
+      <div>
+        <div class="particulars_left_fir">
+          <p>最近浏览</p>
+          <a href="javascript:;">清空</a>
+        </div>
+        <div class="particulars_left_sec">
+          <img src="img/860_thumb_G_1502178475803.jpg" alt="" />
+          <a href="javascript:;">流星雨-33支精品蓝色妖姬</a>
+          <p>¥768</p>
+        </div>
+        <div class="particulars_left_sec">
+          <img src="img/995_thumb_G_1509341453870.jpg" alt="" />
+          <a href="javascript:;">流星雨-33支精品蓝色妖姬</a>
+          <p>¥768</p>
+        </div>
+        <div class="particulars_left_sec">
+          <img src="img/860_thumb_G_1502178475803.jpg" alt="" />
+          <a href="javascript:;">流星雨-33支精品蓝色妖姬</a>
+          <p>¥768</p>
+        </div>
+        <div class="particulars_left_sec">
+          <img src="img/995_thumb_G_1509341453870.jpg" alt="" />
+          <a href="javascript:;">流星雨-33支精品蓝色妖姬</a>
+          <p>¥768</p>
+        </div>
+      </div>
+      <div id="dian">
+        <div class="particulars_right_fir" id="pop">
+          <a href="javascript:;" class="active">商品详情</a>
+          <a href="javascript:;">用户评论</a>
+          <a href="javascript:;">售后保障</a>
+        </div>
+        <div class="particulars_right_sec">
+          <div>
+            <p>
+              材料：<span>7支白玫瑰+2支戴安娜粉玫瑰，搭配适量适量满天星、情人草</span>
+            </p>
+          </div>
+          <div>
+            <p>
+              材料：<span>7支白玫瑰+2支戴安娜粉玫瑰，搭配适量适量满天星、情人草</span>
+            </p>
+          </div>
+          <div>
+            <p>
+              材料：<span>7支白玫瑰+2支戴安娜粉玫瑰，搭配适量适量满天星、情人草</span>
+            </p>
+          </div>
+          <div>
+            <p>
+              材料：<span>7支白玫瑰+2支戴安娜粉玫瑰，搭配适量适量满天星、情人草</span>
+            </p>
+          </div>
+          <div>
+            <p>
+              材料：<span>7支白玫瑰+2支戴安娜粉玫瑰，搭配适量适量满天星、情人草</span>
+            </p>
+          </div>
+          <div>
+            <p>
+              材料：<span>7支白玫瑰+2支戴安娜粉玫瑰，搭配适量适量满天星、情人草</span>
+            </p>
+          </div>
+        </div>
+        <div class="particulars_right_imgs">
+          <p>
+            <img src="img/深情时光详情页_01.jpg" alt="" />
+          </p>
+          <p>
+            <img src="img/深情时光详情页_02.jpg" alt="" />
+          </p>
+          <p>
+            <img src="img/深情时光详情页_03.jpg" alt="" />
+          </p>
+        </div>
+
+        <!-- 售后 -->
+        <div class="sale">
+          <div class="sale_first">
+            <p><a name="mao">售后保障</a></p>
+          </div>
+          <div class="sale_second">
+            <div>
+              <img src="img/iconZP.png" alt="" />
+              <div>
+                <p>关于配送</p>
+                <p>
+                  所有花材均由当地连锁花店专人配送，保证花材新鲜、保证配送准时。
+                </p>
+              </div>
+            </div>
+            <div>
+              <img src="img/iconZP.png" alt="" />
+              <div>
+                <p>关于配送</p>
+                <p>
+                  所有花材均由当地连锁花店专人配送，保证花材新鲜、保证配送准时。
+                </p>
+              </div>
+            </div>
+            <div>
+              <img src="img/iconZP.png" alt="" />
+              <div>
+                <p>关于配送</p>
+                <p>
+                  所有花材均由当地连锁花店专人配送，保证花材新鲜、保证配送准时。
+                </p>
+              </div>
+            </div>
+            <div>
+              <img src="img/iconZP.png" alt="" />
+              <div>
+                <p>关于配送</p>
+                <p>
+                  所有花材均由当地连锁花店专人配送，保证花材新鲜、保证配送准时。
+                </p>
+              </div>
+            </div>
+            <div>
+              <img src="img/iconZP.png" alt="" />
+              <div>
+                <p>关于配送</p>
+                <p>
+                  所有花材均由当地连锁花店专人配送，保证花材新鲜、保证配送准时。
+                </p>
+              </div>
+            </div>
+            <div>
+              <img src="img/iconZP.png" alt="" />
+              <div>
+                <p>关于配送</p>
+                <p>
+                  所有花材均由当地连锁花店专人配送，保证花材新鲜、保证配送准时。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="sale_thire">
+            <p>权利声明：</p>
+            <p>
+              锁您鲜上的所有商品信息、客户评价、商品咨询、网友讨论等内容，是锁您鲜重要的经营资源，未经许可，禁止非法转载使用。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fixation" id="fixation">
+      <div>
+        <div class="particulars_right_fir" id="suspen">
+          <a href="#dian" id="part" class="active">商品详情</a>
+          <a href="javascript:;" id="comment">用户评论</a>
+          <a href="#mao" id="sale">售后保障</a>
+        </div>
+        <div class="gouwu">
+          <button id="shopCart">加入购物车</button>
+        </div>
+      </div>
+    </div>
+    <!-- <div id="curtain">
+      <div>
+        <div>
+          <p>提示</p>
+          <a href="javascript:;" id="cancel">×</a>
+        </div>
+        <div>
+          <p>宝贝已成功添加到购物车！</p>
+          <p>购物车共有<span>1</span>件宝贝，总金额为：<span>¥529.00</span></p>
+          <p>
+            <a href="javascript:;">去结算</a>
+            <a href="javascript:;">继续购物</a>
+          </p>
+        </div>
+      </div>
+    </div> -->
+    <div class="fixed_panel" id="fixedPanel">
+      <div class="panel">
+        <div>
+          <a href="javascript:;"><img src="img/用户.png" alt="" /></a>
+          <div id="shoppingCart">
+            <img src="img/购物车.png" alt="" />
+            <a href="javascript:;">购物车</a>
+            <span>0</span>
+          </div>
+          <div>
+            <a href="javascript:;"><img src="img/我的订单.png" alt="" /></a>
+            <a href="javascript:;"><img src="img/优惠券.png" alt="" /></a>
+            <a href="javascript:;"><img src="img/我的足迹.png" alt="" /></a>
+          </div>
+        </div>
+        <div>
+          <a href=""><img src="img/客服.png" alt="" /></a>
+          <a href="#"><img src="img/返回顶部.png" alt="" /></a>
+        </div>
+      </div>
+      <div id="vanish"></div>
+    </div>
+    <div class="maskcart">
+      <div>
+        <div class="maskcartTop">
+          <p>提示</p>
+          <div><a href="javascript:;">×</a></div>
+        </div>
+        <div class="maskcartBom">
+          <h3>宝贝已成功添加到购物车！</h3>
+          <p>购物车共有 <span>0</span> 件宝贝，总金额为： <span>￥769.00</span></p>
+          <div>
+            <button>去结算</button>
+            <button>继续购物</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/pub.js"></script>
+
+    <footer>
+      <iframe
+        width="100%"
+        height="340px"
+        src="footer.html"
+        frameborder="0"
+      ></iframe>
+    </footer>
+    <script>
+      window.onscroll = function () {
+        var scrollTop =
+          document.documentElement.scrollTop || document.body.scrollTop;
+        var pop = document.getElementById("pop");
+        var fixation = document.getElementById("fixation");
+        if (scrollTop > 1299) {
+          pop.style.display = "none";
+          fixation.style.display = "block";
+        } else {
+          pop.style.display = "flex";
+          fixation.style.display = "none";
+        }
+
+        // ----------放大镜-----------
+        var objDemo = document.getElementById("demo"); //放大镜的容器
+        var objSmallBox = document.getElementById("small-box"); //左边显示小图的容器
+        var objMark = document.getElementById("mark"); //绑定鼠标事件
+        var objFloatBox = document.getElementById("float-box"); //移动的小遮罩层
+        var objBigBox = document.getElementById("big-box"); //右边显示大图的容器
+        var objBigBoxImage = objBigBox.getElementsByTagName("img")[0]; //右边大的图片
+
+        //鼠标移入事件
+        objMark.onmouseover = function () {
+          objFloatBox.style.display = "block"; //移动的小遮罩层显示
+          objBigBox.style.display = "block"; //右边显示大图的容器显示
+        };
+        //鼠标移出事件
+        objMark.onmouseout = function () {
+          objFloatBox.style.display = "none"; //移动的小遮罩层隐藏
+          objBigBox.style.display = "none"; //右边显示大图的容器隐藏
+        };
+        objMark.onmousemove = function (e) {
+          var _event = e || window.event; //兼容多个浏览器的event参数模式
+          //     clientX        距离当前body可视区域的X坐标
+          //     offsetLeft     元素边框外侧到浏览器窗口内侧的距离
+          //     offsetWidth    元素的width+元素的padding+边框的宽度
+          //left 要向左右移动的偏移量
+          var left =
+            _event.clientX -
+            objDemo.offsetLeft -
+            objSmallBox.offsetLeft -
+            objFloatBox.offsetWidth / 2;
+          //top  要向上下移动的偏移量
+          var top =
+            _event.clientY -
+            objDemo.offsetTop -
+            objSmallBox.offsetTop -
+            objFloatBox.offsetHeight / 100 +
+            120;
+
+          //设置边界处理，防止移出小图片
+          if (left < 0) {
+            left = 0;
+          } else if (left > objMark.offsetWidth - objFloatBox.offsetWidth) {
+            left = objMark.offsetWidth - objFloatBox.offsetWidth;
+          }
+
+          if (top < 0) {
+            top = 0;
+          } else if (top > objMark.offsetHeight - objFloatBox.offsetHeight) {
+            top = objMark.offsetHeight - objFloatBox.offsetHeight;
+          }
+
+          //给小的遮罩层设置偏移量
+          objFloatBox.style.left = left + "px";
+          objFloatBox.style.top = top + "px";
+
+          //求其比值
+          var percentX = left / (objMark.offsetWidth - objFloatBox.offsetWidth);
+          var percentY =
+            top / (objMark.offsetHeight - objFloatBox.offsetHeight);
+
+          //方向相反，小图片鼠标移动方向与大图片相反，故而是负值
+          objBigBoxImage.style.left =
+            -percentX * (objBigBoxImage.offsetWidth - objBigBox.offsetWidth) +
+            "px";
+          objBigBoxImage.style.top =
+            -percentY * (objBigBoxImage.offsetHeight - objBigBox.offsetHeight) +
+            "px";
+        };
+      };
+
+      var sweet = document.querySelectorAll(".sweet>p>input");
+      let s = 0;
+      sweet.forEach((v, i, arr) => {
+        v.onclick = function () {
+          let num = document.getElementById("num");
+          let price = document.getElementById("price");
+          let priceCost = parseInt(price.innerHTML.substring(1));
+          let priceRaise = parseInt(
+            this.nextElementSibling.innerHTML.substring(1)
+          );
+          if (this.checked == true) {
+            s++;
+            num.innerHTML = s;
+            price.innerHTML = `¥${priceCost + priceRaise}`;
+          } else {
+            s--;
+            num.innerHTML = s;
+            price.innerHTML = `¥${priceCost - priceRaise}`;
+          }
+        };
+      });
+
+      let detailedAss = document.querySelectorAll(".detailed_ass>div");
+      let detailedLists = document.querySelector(
+        ".detailed_lists>div:nth-child(2)>div"
+      );
+
+      function animat(val) {
+        var newTop = parseInt(getComputedStyle(detailedLists).marginTop) + val;
+        detailedLists.style.marginTop = newTop + "px";
+        if (newTop > 0) {
+          detailedLists.style.marginTop = 0 + "px";
+        }
+        if (newTop < -440) {
+          detailedLists.style.marginTop = -440 + "px";
+        }
+      }
+
+      detailedAss.forEach((v, i) => {
+        v.onclick = function () {
+          if (this.getAttribute("name") == "detailed_top") {
+            animat(220);
+          } else {
+            animat(-220);
+          }
+        };
+      });
+
+
+      let imgsLists = document.querySelectorAll(".imgs_lists>div>img");
+      let big_box = document.getElementById("big-box");
+      let imgass = document.getElementById("imgass");
+      imgsLists.forEach((v, i) => {
+        v.onmouseover = function () {
+          let imgsrc = this.getAttribute("src");
+          imgass.setAttribute("src", imgsrc);
+          big_box.children[0].setAttribute("src", imgsrc);
+        };
+      });
+      let btnLeft = document.getElementById("btnLeft");
+      let btnRight = document.getElementById("btnRight");
+      let imgwidth = 75;
+      let Imglist = document.getElementById("Imglist");
+      let n = 0;
+
+      btnRight.onclick = function () {
+        n++;
+        btnLeft.disabled = false;
+        btnLeft.classList = "";
+        let marginLeft = getComputedStyle(Imglist).marginLeft.slice(0, -2);
+        Imglist.style.marginLeft = parseFloat(marginLeft) - imgwidth + "px";
+        if (n >= imgsLists.length - 3) {
+          btnRight.disabled = true;
+          btnRight.classList = "active";
+        }
+      };
+      btnLeft.onclick = function () {
+        n--;
+        btnRight.disabled = false;
+        btnRight.className = "";
+        let marginLeft = getComputedStyle(Imglist).marginLeft.slice(0, -2);
+        // console.log(marginLeft)
+        Imglist.style.marginLeft = parseFloat(marginLeft) + imgwidth + "px";
+        if (n <= 0) {
+          btnLeft.disabled = true;
+          btnLeft.className = "active";
+        }
+      };
+
+      let add = document.getElementById("add");
+      let sub = document.getElementById("sub");
+      let val = document.getElementById("numval");
+      add.addEventListener("click", () => {
+        sub.disabled = false;
+        val.value = parseInt(val.value) + 1;
+        // console.log(val.value)
+      });
+      sub.addEventListener("click", () => {
+        val.value = parseInt(val.value) - 1;
+        if (val.value <= 0) sub.disabled = true;
+      });
+
+      let particularsLeftFir = document.querySelector('.particulars_left_fir>a')
+      particularsLeftFir.addEventListener('click',()=>{
+        let particularsLeftSec = document.getElementsByClassName('particulars_left_sec')
+        console.log(particularsLeftSec)
+       for(v of particularsLeftSec){
+        v.style.display = 'none'
+       }
+      })
+
+
+
+      let part = document.getElementById("part");
+      let comment = document.getElementById("comment");
+      let sale = document.getElementById("sale");
+      let suspen = document.querySelectorAll("#suspen>a");
+      suspen.forEach((item, i) => {
+        // console.log()
+
+        item.addEventListener("click", (event) => {
+          let active = item.parentElement.getElementsByClassName("active");
+          active[0].className = "";
+          // console.log(active)
+          item.className = "active";
+          // console.log("1235")
+          if (event.target.getAttribute("id") == "sale") {
+            location.href = "#sale";
+          }
+        });
+      });
+
+      var sug = document.getElementById("proposal");
+      sug.onclick = function () {
+        var mask = document.getElementsByClassName("mask")[0];
+        mask.style.display = "block";
+      };
+      var cha = document.querySelector(".mask_top>span a");
+      cha.onclick = function () {
+        var mask = document.getElementsByClassName("mask")[0];
+        mask.style.display = "none";
+      };
+
+      let informationText1 = document.querySelectorAll('.information_text>button')[0];
+      let maskcart = document.querySelector('.maskcart');
+      let maskcartBomSpan1 = document.querySelector('.maskcartBom>p>span:first-child')
+      let maskcartBomSpan2 = document.querySelector('.maskcartBom>p>span:last-child')
+      let price = document.getElementsByClassName('price')[0].innerHTML.slice(1)
+      console.log(price)
+      
+      informationText1.onclick=function(){
+        maskcart.style.display = 'block'
+        maskcartBomSpan1.innerHTML = parseInt(maskcartBomSpan1.innerHTML)+1
+        maskcartBomSpan2.innerHTML = '¥' + parseInt(price*maskcartBomSpan1.innerHTML).toFixed(2)
+      }
+      let maskcartTopA = document.querySelector('.maskcartTop a')
+      
+      maskcartTopA.addEventListener('click',()=>{
+        maskcart.style.display = 'none'
+      })
+
+      
+
+      let maskcartBomBtn1 = document.querySelector('.maskcartBom>div>button:first-child');
+      let maskcartBomBtn2 = document.querySelector('.maskcartBom>div>button:last-child');
+      maskcartBomBtn1.addEventListener('click',()=>{
+        location.href='http://127.0.0.1:5500/PC/public/cart.html'
+      })
+      maskcartBomBtn2.addEventListener('click',()=>{
+        maskcart.style.display = 'none'
+      })
+
+      let informationText2 = document.querySelectorAll('.information_text>button')[1];
+      informationText2.onclick = function(){
+        location.href = 'http://127.0.0.1:5500/PC/public/cart.html'
+      }
+    </script>
+  </body>
+</html>
